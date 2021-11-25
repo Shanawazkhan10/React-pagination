@@ -22,7 +22,18 @@
 .App-link {
   color: #61dafb;
 }
-
+.cssclass {
+  height: 200px;
+  /* width: 30px; */
+  /* max-width: 250px; */
+  /* border: 1px solid; */
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

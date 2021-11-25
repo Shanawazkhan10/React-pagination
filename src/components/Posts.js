@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Posts = ({ posts, loading }) => {
   if (loading) {
@@ -6,13 +6,24 @@ const Posts = ({ posts, loading }) => {
   }
 
   return (
-    <ul className='list-group mb-4'>
-      {posts.map(post => (
-        <li key={post.id} className='list-group-item'>
-          {post.title}
-        </li>
-      ))}
-    </ul>
+    <div>
+      <div className="container">
+        <div className="row">
+          {/* <div className="col-md-3"> */}{" "}
+          {posts.map((post) => (
+            <div className="col-md-4 cssclass">{post.title}</div>
+          ))}
+          {/* </div> */}
+        </div>
+      </div>
+      {/* <div className="container">
+        <div className="col-md-3">
+          {posts.map((post) => (
+            <p> </p>
+          ))}
+        </div>
+      </div> */}
+    </div>
   );
 };
 
